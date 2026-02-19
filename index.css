@@ -154,7 +154,6 @@ button {
 }
 
 .food-name {
-  width: 43px;
   height: 17px;
   margin-right: 13px;
   font-family: Smythe;
@@ -167,6 +166,7 @@ button {
 .order-row .remove {
   width: 77px;
   height: 22px;
+  cursor: pointer;
   font-family: Verdana;
   font-weight: 400;
   font-size: 12px;
@@ -300,14 +300,6 @@ button {
   border: none;
 }
 
-.checkout-section {
-  display: none;
-}
-
-.payment-modal {
-  display: none;
-}
-
 .order-complete-section {
   width: 504px;
   height: 120px;
@@ -330,4 +322,8 @@ button {
   line-height: 16.8px;
   letter-spacing: 0%;
   color: #065f46;
+}
+
+.hidden {
+  display: none;
 }

@@ -14,59 +14,9 @@
       <h2>The best burgers and pizzas in town.</h2>
     </div>
     <div class="main">
-      <div class="menu-section">
-        <div class="item">
-          <div class="item-graphic">🍕</div>
-          <div class="item-info">
-            <h2 class="item-title">Pizza</h2>
-            <p class="item-description">pepperoni, mushroom, mozarella</p>
-            <p class="item-price">$14</p>
-          </div>
-          <button class="add-btn"></button>
-        </div>
-        <div class="item">
-          <div class="item-graphic">🍔</div>
-          <div class="item-info">
-            <h2 class="item-title">Hamburger</h2>
-            <p class="item-description">beef, cheese, lettuce</p>
-            <p class="item-price">$12</p>
-          </div>
-          <button class="add-btn"></button>
-        </div>
-        <div class="item">
-          <div class="item-graphic">🍺</div>
-          <div class="item-info">
-            <h2 class="item-title">Beer</h2>
-            <p class="item-description">grain, hops, yeast, water</p>
-            <p class="item-price">$12</p>
-          </div>
-          <button class="add-btn"></button>
-        </div>
-      </div>
-      <div class="checkout-section">
-        <h2 class="checkout-title">Your order</h2>
-        <div class="order-row">
-          <div class="left">
-            <div class="food-name">Pizza</div>
-            <div class="remove">remove</div>
-          </div>
-          <div class="price">$14</div>
-        </div>
-        <div class="order-row">
-          <div class="left">
-            <div class="food-name">Beer</div>
-            <div class="remove">remove</div>
-          </div>
-          <div class="price">$12</div>
-        </div>
-        <div class="divider"></div>
-        <div class="total">
-          <div class="total-title">Total price:</div>
-          <div class="total-price">$26</div>
-        </div>
-        <button class="purchase-btn">Complete order</button>
-      </div>
-      <div class="payment-modal">
+      <div class="menu-section" id="menu-section"></div>
+      <div class="checkout-section" id="checkout-section"></div>
+      <div class="payment-modal hidden">
         <h2 class="modal-title">Enter card details</h2>
         <form>
           <div class="input">
@@ -87,10 +37,10 @@
           </div>
         </form>
       </div>
-      <div class="order-complete-section">
+      <div class="order-complete-section hidden">
         <p class="order-details">Thanks, James! Your order is on its way!</p>
       </div>
     </div>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
