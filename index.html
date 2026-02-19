@@ -16,28 +16,34 @@
     <div class="main">
       <div class="menu-section" id="menu-section"></div>
       <div class="checkout-section" id="checkout-section"></div>
-      <div class="payment-modal hidden">
+      <div class="payment-modal hidden" id="payment-modal">
         <h2 class="modal-title">Enter card details</h2>
-        <form>
+        <form id="payment-form">
           <div class="input">
-            <input type="text" placeholder="Enter your name" name="name" />
+            <input
+              type="text"
+              placeholder="Enter your name"
+              name="name"
+              required
+            />
           </div>
           <div class="input">
             <input
               type="text"
               placeholder="Enter card number"
               name="cardNumber"
+              required
             />
           </div>
           <div class="input">
-            <input type="text" placeholder="Enter CVV" name="cvv" />
+            <input type="text" placeholder="Enter CVV" name="cvv" required />
           </div>
           <div class="pay-button">
             <button type="submit">Pay</button>
           </div>
         </form>
       </div>
-      <div class="order-complete-section hidden">
+      <div class="order-complete-section hidden" id="order-complete-section">
         <p class="order-details">Thanks, James! Your order is on its way!</p>
       </div>
     </div>
