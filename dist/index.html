@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-BJY-hX1P.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C3_e3CYl.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Jimmy's Diner</h1>
+      <h2>The best burgers and pizzas in town.</h2>
+    </div>
+    <div class="main">
+      <div class="menu-section" id="menu-section"></div>
+      <div class="checkout-section" id="checkout-section"></div>
+      <div class="payment-modal hidden" id="payment-modal">
+        <h2 class="modal-title">Enter card details</h2>
+        <form id="payment-form">
+          <div class="input">
+            <input
+              type="text"
+              placeholder="Enter your name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="input">
+            <input
+              type="text"
+              placeholder="Enter card number"
+              name="cardNumber"
+              required
+            />
+          </div>
+          <div class="input">
+            <input type="text" placeholder="Enter CVV" name="cvv" required />
+          </div>
+          <div class="pay-button">
+            <button type="submit">Pay</button>
+          </div>
+        </form>
+      </div>
+      <div class="order-complete-section hidden" id="order-complete-section">
+        <p class="order-details">Thanks, James! Your order is on its way!</p>
+      </div>
+    </div>
+  </body>
+</html>
